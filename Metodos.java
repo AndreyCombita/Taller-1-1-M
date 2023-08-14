@@ -1,7 +1,6 @@
 
 package calculadora2;
 
-import java.lang.Math;
 import java.util.Scanner;
 
 
@@ -105,6 +104,21 @@ public class Metodos {
         this.num1=in.nextDouble();
         double tan= Math.tan(this.num1);
         System.out.println("su resultado es igual a "+ tan);}
+    
+    //metodo para salir saber si quiere hacer otra operacion
+    public void otra(){
+        System.out.println("\n¿Desea hacer otra operacion?"
+                            + "\n1.Si"
+                            + "\n2.No");
+                    int i =0;
+                    i=in.nextInt();
+                    switch (i){
+                        case 1:break;
+                        case 2:
+                            System.out.println("Finalizado")
+                                    ;System.exit(i);
+                    }
+    }
     
         
         
