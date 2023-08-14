@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 
 public class Calculadora2 {
-    double num1;
-    double num2;
+   
     
     
 
@@ -33,7 +32,29 @@ public class Calculadora2 {
                  M.resta();
                  break;
                 case 3:
-                M.
+                    M.multiplicaion();
+                break;
+                case 4:
+                    M.division();
+                break;
+                case 5:
+                    M.sen();
+                break;
+                case 6:
+                    M.cos();
+                break;
+                case 7:
+                    M.tan();
+                break;
+                case 8:
+                    M.raize();
+                break;
+                case 9:
+                    M.pote();
+                break;
+                case 10:
+                    M.iva();
+                break;
             }
             if (opc==11)
                 break;
