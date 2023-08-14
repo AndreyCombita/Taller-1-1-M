@@ -90,20 +90,64 @@ public class Metodos {
 //trigonometricas
         
     public void sen(){
-        System.out.println("Ingrese el numero al que desea obtener el seno:");
-        this.num1=in.nextDouble();
-        double sen= Math.sin(this.num1);
-        System.out.println("su resultado es igual a "+ sen);}
+        System.out.println("Lo desea calcular en:"
+                + "\n1.radianes"
+                + "\n2.angulos");
+        int j=0;
+        switch (j){
+                case 1:
+                    System.out.println("Ingrese el numero al que desea obtener el seno:");
+                    this.num1=in.nextDouble();
+                    double sen= Math.sin(this.num1);
+                    System.out.println("su resultado es igual a "+ sen);
+                break;
+                case 2:
+                    System.out.println("Ingrese el angulo al que desea obtener el seno:");
+                    this.num1=in.nextDouble();
+                    double seno= (Math.sin(this.num1)*180)/Math.PI;
+                    System.out.println("su resultado es igual a "+ seno);
+                break;
+        }
+    }
     public void cos(){
-        System.out.println("Ingrese el numero al que desea obtener el coseno:");
-        this.num1=in.nextDouble();
-        double cos= Math.cos(this.num1);
-        System.out.println("su resultado es igual a "+ cos);}
+        System.out.println("Lo desea calcular en:"
+                + "\n1.radianes"
+                + "\n2.angulos");
+        int j=0;
+        switch (j){
+                case 1:
+                    System.out.println("Ingrese el numero al que desea obtener el coseno:");
+                    this.num1=in.nextDouble();
+                    double cos= Math.cos(this.num1);
+                    System.out.println("su resultado es igual a "+ cos);
+                break;
+                case 2:
+                    System.out.println("Ingrese el angulo al que desea obtener el coseno:");
+                    this.num1=in.nextDouble();
+                    double cose= (Math.sin(this.num1)*180)/Math.PI;
+                    System.out.println("su resultado es igual a "+ cose);
+                break;
+        }}
     public void tan(){
-        System.out.println("Ingrese el numero al que desea obtener la tangente:");
-        this.num1=in.nextDouble();
-        double tan= Math.tan(this.num1);
-        System.out.println("su resultado es igual a "+ tan);}
+        System.out.println("Lo desea calcular en:"
+                + "\n1.radianes"
+                + "\n2.angulos");
+        int j=0;
+        switch (j){
+                case 1:
+                    System.out.println("Ingrese el numero al que desea obtener la tangente:");
+                    this.num1=in.nextDouble();
+                    double tan= Math.sin(this.num1);
+                    System.out.println("su resultado es igual a "+ tan);
+                break;
+                case 2:
+                    System.out.println("Ingrese el numero al que desea obtener la tangente:");
+                    this.num1=in.nextDouble();
+                    double tano= (Math.sin(this.num1)*180)/Math.PI;
+                    System.out.println("su resultado es igual a "+ tano);
+                break;
+        }
+    }
     
     //metodo para salir saber si quiere hacer otra operacion
     public void otra(){
