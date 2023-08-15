@@ -93,7 +93,7 @@ public class Metodos {
         System.out.println("Lo desea calcular en:"
                 + "\n1.radianes"
                 + "\n2.angulos");
-        int j=0;
+        int j=in.nextInt();
         switch (j){
                 case 1:
                     System.out.println("Ingrese el numero al que desea obtener el seno:");
@@ -113,7 +113,7 @@ public class Metodos {
         System.out.println("Lo desea calcular en:"
                 + "\n1.radianes"
                 + "\n2.angulos");
-        int j=0;
+        int j=in.nextInt();
         switch (j){
                 case 1:
                     System.out.println("Ingrese el numero al que desea obtener el coseno:");
@@ -132,7 +132,7 @@ public class Metodos {
         System.out.println("Lo desea calcular en:"
                 + "\n1.radianes"
                 + "\n2.angulos");
-        int j=0;
+        int j=in.nextInt();
         switch (j){
                 case 1:
                     System.out.println("Ingrese el numero al que desea obtener la tangente:");
