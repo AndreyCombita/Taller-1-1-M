@@ -4,7 +4,7 @@ package calculadora2;
 
 public class GUI extends javax.swing.JFrame {
     
-   
+    Metodos m=new Metodos();
     double num1;
     double num2;
     int igua;
@@ -367,23 +367,27 @@ public class GUI extends javax.swing.JFrame {
     private void igualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_igualActionPerformed
         switch (igua) {
             case 1:
-                num2=Double.parseDouble(campo.getText());
-                campo.setText(Double.toString(num1+num2));
+                num2=Double.parseDouble(campo.getText());              
+                campo.setText(Double.toString(m.suma(num1, num2)));
                 break;
                 
              case 2:
                 num2=Double.parseDouble(campo.getText());
-                campo.setText(Double.toString(num1-num2));
+                campo.setText(Double.toString(m.resta(num1, num2)));
                 break;
                 
             case 3:
                 num2=Double.parseDouble(campo.getText());
-                campo.setText(Double.toString(num1*num2));
+                campo.setText(Double.toString(m.mult(num1, num2)));
                 break;
                 
             case 4:
                 num2=Double.parseDouble(campo.getText());
-                campo.setText(Double.toString(num1/num2));
+                if(num2==0){
+                    campo.setText("NO SE PUEDE RESOLVER");
+                }else{
+                campo.setText(Double.toString(m.division(num1, num2)));
+                }
                 break;
                 
             case 5:

@@ -7,6 +7,7 @@ public class Calculadora2 {
 
     public static void main(String[] args) {
       int opc=0;
+      double num1, num2;
       
         Scanner in = new Scanner(System.in);
         for (;;){
@@ -21,19 +22,40 @@ public class Calculadora2 {
             }while (opc < 0 || opc>11);
             switch(opc){
                 case 1:
-                    M.suma();
-                    M.otra();                
+                    System.out.println("Ingrese el primer numero:");
+                    num1=in.nextDouble();
+                    System.out.println("Ingrese el segundo numero:");
+                    num2=in.nextDouble();
+                    System.out.println("su resultado es igual a "+ M.suma(num1,num2));
+                    M.otra(); 
+                    
                  break;
                 case 2:
-                    M.resta();
+                    System.out.println("Ingrese el primer numero:");
+                    num1=in.nextDouble();
+                    System.out.println("Ingrese el segundo numero:");
+                    num2=in.nextDouble();
+                    System.out.println("su resultado es igual a "+ M.resta(num1,num2));
                     M.otra();
                  break;
                 case 3:
-                    M.multiplicaion();
-                    M.otra();
+                    System.out.println("Ingrese el primer numero:");
+                    num1=in.nextDouble();
+                    System.out.println("Ingrese el segundo numero:");
+                    num2=in.nextDouble();
+                    System.out.println("su resultado es igual a "+ M.mult(num1,num2));
+                     M.otra();
                 break;
                 case 4:
-                    M.division();
+                    System.out.println("Ingrese el Divisor:");
+                    num1=in.nextDouble();
+                    System.out.println("Ingrese el Dividendo:");
+                    num2=in.nextDouble();
+                    if(num2==0){
+                    System.out.println("no es posible resolver esta operacion"
+                        + "\n Error: no se puede dividir entre 0");
+                    }else{
+                        System.out.println("su resultado es igual a "+ M.division(num1,num2));}
                     M.otra();
                 break;
                 case 5:

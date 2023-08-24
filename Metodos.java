@@ -15,43 +15,17 @@ public class Metodos {
     }
     
 //basicos
-    public void suma (){
-        System.out.println("Ingrese el primer numero:");
-        this.num1=in.nextDouble();
-        System.out.println("Ingrese el segundo numero:");
-        this.num2=in.nextDouble();
-        double suma=this.num1+this.num2;
-        System.out.println("su resultado es igual a "+ suma);
+    public double suma (double num1, double num2){
+        return num1+num2;
     }
-    public void resta (){
-        System.out.println("Ingrese el primer numero:");
-        this.num1=in.nextDouble();
-        System.out.println("Ingrese el segundo numero:");
-        this.num2=in.nextDouble();
-        double resta=this.num1-this.num2;
-        System.out.println("su resultado es igual a "+ resta);
+    public double resta (double num1, double num2){
+        return num1-num2;
     }
-    public void multiplicaion (){
-        System.out.println("Ingrese el primer numero:");
-        this.num1=in.nextDouble();
-        System.out.println("Ingrese el segundo numero:");
-        this.num2=in.nextDouble();
-        double multiplicacion=this.num1*this.num2;
-        System.out.println("su resultado es igual a "+ multiplicacion);
+    public double mult (double num1, double num2){
+        return num1*num2;
     }
-    public void division (){
-        System.out.println("Ingrese el Divisor:");
-        this.num1=in.nextDouble();
-        System.out.println("Ingrese el Dividendo:");
-        this.num2=in.nextDouble();
-        if(this.num2==0){
-            System.out.println("no es posible resolver esta operacion"
-                    + "\n Error: no se puede dividir entre 0");
-        }else{
-            
-        double division=this.num1/this.num2;
-        System.out.println("su resultado es igual a "+ division);}
-    
+    public double division (double num1, double num2){
+        return num1/num2;
     }
     
 //operaciones no basicas
@@ -159,8 +133,8 @@ public class Metodos {
                     switch (i){
                         case 1:break;
                         case 2:
-                            System.out.println("Finalizado")
-                                    ;System.exit(i);
+                            System.out.println("Finalizado");
+                            System.exit(i);
                     }
     }
     
