@@ -128,16 +128,46 @@ public class GUI extends javax.swing.JFrame {
         });
 
         jButton12.setText("SEN");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
 
         resta.setText("-");
+        resta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                restaActionPerformed(evt);
+            }
+        });
 
         division.setText("/");
+        division.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                divisionActionPerformed(evt);
+            }
+        });
 
         mult.setText("X");
+        mult.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                multActionPerformed(evt);
+            }
+        });
 
         jButton16.setText("COS");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
 
         jButton17.setText("TAN");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
 
         borrar.setText("C");
         borrar.addActionListener(new java.awt.event.ActionListener() {
@@ -147,10 +177,25 @@ public class GUI extends javax.swing.JFrame {
         });
 
         iva.setText("IVA");
+        iva.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ivaActionPerformed(evt);
+            }
+        });
 
         raiz.setText("RAIZ");
+        raiz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                raizActionPerformed(evt);
+            }
+        });
 
         pot.setText("POT");
+        pot.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                potActionPerformed(evt);
+            }
+        });
 
         igual.setText("=");
         igual.addActionListener(new java.awt.event.ActionListener() {
@@ -201,24 +246,27 @@ public class GUI extends javax.swing.JFrame {
                                     .addComponent(suma, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
                                     .addComponent(resta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton12)
-                                .addGap(18, 18, 18)
-                                .addComponent(iva, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton16)
-                                .addGap(18, 18, 18)
-                                .addComponent(raiz))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(borrar)
+                                    .addComponent(jButton12)
                                     .addGap(18, 18, 18)
-                                    .addComponent(igual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(iva, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jButton17)
+                                    .addComponent(jButton16)
                                     .addGap(18, 18, 18)
-                                    .addComponent(pot))))))
+                                    .addComponent(raiz)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(borrar)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(igual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jButton17)
+                                        .addGap(70, 70, 70)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(pot)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -369,6 +417,57 @@ public class GUI extends javax.swing.JFrame {
                 break;
         }
     }//GEN-LAST:event_igualActionPerformed
+
+    private void restaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_restaActionPerformed
+        num1 = Double.parseDouble(campo.getText());
+        igua = 2;
+        campo.setText(" ");
+    }//GEN-LAST:event_restaActionPerformed
+
+    private void divisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divisionActionPerformed
+        num1 = Double.parseDouble(campo.getText());
+        igua = 4;
+        campo.setText(" ");
+    }//GEN-LAST:event_divisionActionPerformed
+
+    private void multActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multActionPerformed
+        num1 = Double.parseDouble(campo.getText());
+        igua = 3;
+        campo.setText(" ");
+    }//GEN-LAST:event_multActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        num1 = Double.parseDouble(campo.getText());
+        igua=5;
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+       num1 = Double.parseDouble(campo.getText());
+        igua=6;
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+       num1 = Double.parseDouble(campo.getText());
+       igua=7;
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void ivaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ivaActionPerformed
+       num2 = Double.parseDouble(campo.getText());
+       igua=10;
+       campo.setText(" ");
+    }//GEN-LAST:event_ivaActionPerformed
+
+    private void raizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_raizActionPerformed
+       num2 = Double.parseDouble(campo.getText());
+       igua=8;
+       campo.setText(" ");
+    }//GEN-LAST:event_raizActionPerformed
+
+    private void potActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_potActionPerformed
+       num2 = Double.parseDouble(campo.getText());
+       igua=9;
+       campo.setText(" ");
+    }//GEN-LAST:event_potActionPerformed
 
     /**
      * @param args the command line arguments
