@@ -59,27 +59,89 @@ public class Calculadora2 {
                     M.otra();
                 break;
                 case 5:
-                    M.sen();
+                    System.out.println("Lo desea calcular en:"
+                    + "\n1.radianes"
+                    + "\n2.angulos");
+                    int j=in.nextInt();
+                    switch (j){
+                        case 1:
+                            System.out.println("Ingrese el numero al que desea obtener el seno:");
+                            num1=in.nextDouble();
+                            System.out.println("su resultado es igual a "+ M.sen(num1));
+                        break;
+                        case 2:
+                            System.out.println("Ingrese el angulo al que desea obtener el seno:");
+                            num1=in.nextDouble();                                
+                            System.out.println("su resultado es igual a "+ M.seno(num1));
+                        break;}
                     M.otra();
                 break;
                 case 6:
-                    M.cos();
+                    System.out.println("Lo desea calcular en:"
+                    + "\n1.radianes"
+                    + "\n2.angulos");
+                    int n=in.nextInt();
+                    switch (n){
+                        case 1:
+                            System.out.println("Ingrese el numero al que desea obtener el coseno:");
+                            num1=in.nextDouble();
+                            System.out.println("su resultado es igual a "+ M.cos(num1));
+                        break;
+                        case 2:
+                            System.out.println("Ingrese el angulo al que desea obtener el coseno:");
+                            num1=in.nextDouble();                                
+                            System.out.println("su resultado es igual a "+ M.coseno(num1));
+                        break;}
                     M.otra();
                 break;
                 case 7:
-                    M.tan();
+                    System.out.println("Lo desea calcular en:"
+                    + "\n1.radianes"
+                    + "\n2.angulos");
+                    int l=in.nextInt();
+                    switch (l){
+                        case 1:
+                            System.out.println("Ingrese el numero al que desea obtener el tangente:");
+                            num1=in.nextDouble();
+                            System.out.println("su resultado es igual a "+ M.tan(num1));
+                        break;
+                        case 2:
+                            System.out.println("Ingrese el angulo al que desea obtener el tangente:");
+                            num1=in.nextDouble();                                
+                            System.out.println("su resultado es igual a "+ M.tangente(num1));
+                        break;}
                     M.otra();
                 break;
                 case 8:
-                    M.raize();
+                    System.out.println("Ingrese el radicando (el numero al que desee calcular la raiz):");
+                    num1=in.nextDouble();
+                    System.out.println("Ingrese el radical (la potencia por la cual desea sacar la raiz):");
+                    num2=in.nextDouble();
+                    if(num2<1){
+                    System.out.println("No es posible resolver esta operacion"
+                    + "\n Error: no puede tener un radical menor o igual a 0");
+                    }else{
+                     System.out.println("su resultado es igual a "+ M.raize(num1,num2));}
                     M.otra();
                 break;
                 case 9:
-                    M.pote();
+                    System.out.println("Ingrese el numero base:");
+                    num1=in.nextDouble();
+                    System.out.println("Ingrese la potencia a la que desea exponer:");
+                    num2=in.nextDouble();
+                    System.out.println("su resultado es igual a "+ M.pote(num1,num2));
                     M.otra();
                 break;
                 case 10:
-                    M.iva();
+                    System.out.println("Ingrese el numero al que le desea sacar el IVA:");
+                    num1=in.nextDouble();
+                    System.out.println("Ingrese el porcentaje del IVA");
+                    num2=in.nextDouble();
+                    if(num2<1){
+                    System.out.println("No es posible resolver esta operacion"
+                    + "\n Error: no puede tener un porcentaje menor a 0");
+                    }else{
+                    System.out.println("el IVA es de "+M.iva(num1,num2));
                     M.otra();
                 break;
             }
@@ -87,6 +149,7 @@ public class Calculadora2 {
                 break;
             }
             System.out.println("Finalizado");
+        }
     }
     
 }

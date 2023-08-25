@@ -5,16 +5,9 @@ import java.util.Scanner;
 
 
 public class Metodos {
-    double num1;
-    double num2;
     Scanner in=new Scanner(System.in);
-    
-    public Metodos(){
-    this.num1=num1;
-    this.num2=num2 ;
-    }
-    
-//basicos
+     
+    //basicos
     public double suma (double num1, double num2){
         return num1+num2;
     }
@@ -29,99 +22,43 @@ public class Metodos {
     }
     
 //operaciones no basicas
-    public void raize(){
-        System.out.println("Ingrese el radicando (el numero al que desee calcular la raiz):");
-        this.num1=in.nextDouble();
-        System.out.println("Ingrese el radical (la potencia por la cual desea sacar la raiz):");
-        this.num2=in.nextDouble();
-        if(this.num2<1){
-            System.out.println("No es posible resolver esta operacion"
-                    + "\n Error: no puede tener un radical menor o igual a 0");
-        }else{
-        double raize=Math.pow(this.num1, 1/this.num2);
-        System.out.println("su resultado es igual a "+ raize);}
+    public double raize(double num1, double num2){
+        return num1/(1/num2);
     }
-    public void pote(){
-        System.out.println("Ingrese el numero base:");
-        this.num1=in.nextDouble();
-        System.out.println("Ingrese la potencia a la que desea exponer:");
-        this.num2=in.nextDouble();
-        double pote=Math.pow(this.num1, this.num2);
-        System.out.println("su resultado es igual a "+ pote);}
+    public double pote(double num1, double num2){
+        return Math.pow(num1, num2);}
     
-    public void iva (){
-        System.out.println("Ingrese el numero al que le desea sacar el IVA:");
-        this.num1=in.nextDouble();
-        System.out.println("Ingrese el porcentaje del IVA");
-        this.num2=in.nextDouble();
-        if(this.num2<1){
-            System.out.println("No es posible resolver esta operacion"
-                    + "\n Error: no puede tener un porcentaje menor a 0");
-        }else{
-        double iva= this.num1*(this.num2/100);
-        System.out.println("su resultado es igual a "+ iva);}}
+    public double iva (double num1, double num2){
+        
+        return num1*(num2/100);
+        }
         
 //trigonometricas
         
-    public void sen(){
-        System.out.println("Lo desea calcular en:"
-                + "\n1.radianes"
-                + "\n2.angulos");
-        int j=in.nextInt();
-        switch (j){
-                case 1:
-                    System.out.println("Ingrese el numero al que desea obtener el seno:");
-                    this.num1=in.nextDouble();
-                    double sen= Math.sin(this.num1);
-                    System.out.println("su resultado es igual a "+ sen);
-                break;
-                case 2:
-                    System.out.println("Ingrese el angulo al que desea obtener el seno:");
-                    this.num1=in.nextDouble();
-                    double seno= (Math.sin(this.num1)*180)/Math.PI;
-                    System.out.println("su resultado es igual a "+ seno);
-                break;
-        }
+    public double sen(double num1){
+        
+        return  Math.sin(num1);
     }
-    public void cos(){
-        System.out.println("Lo desea calcular en:"
-                + "\n1.radianes"
-                + "\n2.angulos");
-        int j=in.nextInt();
-        switch (j){
-                case 1:
-                    System.out.println("Ingrese el numero al que desea obtener el coseno:");
-                    this.num1=in.nextDouble();
-                    double cos= Math.cos(this.num1);
-                    System.out.println("su resultado es igual a "+ cos);
-                break;
-                case 2:
-                    System.out.println("Ingrese el angulo al que desea obtener el coseno:");
-                    this.num1=in.nextDouble();
-                    double cose= (Math.sin(this.num1)*180)/Math.PI;
-                    System.out.println("su resultado es igual a "+ cose);
-                break;
-        }}
-    public void tan(){
-        System.out.println("Lo desea calcular en:"
-                + "\n1.radianes"
-                + "\n2.angulos");
-        int j=in.nextInt();
-        switch (j){
-                case 1:
-                    System.out.println("Ingrese el numero al que desea obtener la tangente:");
-                    this.num1=in.nextDouble();
-                    double tan= Math.sin(this.num1);
-                    System.out.println("su resultado es igual a "+ tan);
-                break;
-                case 2:
-                    System.out.println("Ingrese el numero al que desea obtener la tangente:");
-                    this.num1=in.nextDouble();
-                    double tano= (Math.sin(this.num1)*180)/Math.PI;
-                    System.out.println("su resultado es igual a "+ tano);
-                break;
+    public double seno(double num1){
+        return (Math.sin(num1)*180)/Math.PI;
+    
         }
+    public double cos(double num1){
+        
+        return  Math.cos(num1);
     }
+    public double coseno(double num1){
+        return (Math.cos(num1)*180)/Math.PI;
+    
+        }
+    public double tan(double num1){
+        
+        return  Math.tan(num1);
+    }
+    public double tangente(double num1){
+        return (Math.tan(num1)*180)/Math.PI;
+    
+        }
     
     //metodo para salir saber si quiere hacer otra operacion
     public void otra(){

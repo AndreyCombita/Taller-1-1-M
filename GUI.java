@@ -392,32 +392,32 @@ public class GUI extends javax.swing.JFrame {
                 
             case 5:
                 campo.setText(" ");
-                campo.setText(Double.toString(Math.sin(num1)));
+                campo.setText(Double.toString(m.sin(num1)));
                 
                 break;
                 
             case 6:
                 campo.setText(" ");
-                campo.setText(Double.toString(Math.cos(num1)));
+                campo.setText(Double.toString(m.cos(num1)));
                 break;
                 
             case 7:
                 campo.setText(" ");
-                campo.setText(Double.toString(Math.tan(num1)));
+                campo.setText(Double.toString(m.tan(num1)));
                 break;
                 
              case 8:
                 num1=Double.parseDouble(campo.getText());
-                campo.setText(Double.toString(Math.pow(num1,1/ num2)));
+                campo.setText(Double.toString(m.raize(num1,num2)));
                 break;
                 
             case 9:
                 num2=Double.parseDouble(campo.getText());
-                campo.setText(Double.toString(Math.pow(num1,num2)));
+                campo.setText(Double.toString(m.pote(num1,num2)));
                 break;
             case 10:
                 num1=Double.parseDouble(campo.getText());
-                campo.setText(Double.toString( num1*(num2/100)));
+                campo.setText(Double.toString( m.iva(num1,num2)));
                 break;
         }
     }//GEN-LAST:event_igualActionPerformed
