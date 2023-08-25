@@ -256,18 +256,16 @@ public class GUI extends javax.swing.JFrame {
                                     .addComponent(jButton16)
                                     .addGap(18, 18, 18)
                                     .addComponent(raiz)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(borrar)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(igual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jButton17)
-                                        .addGap(70, 70, 70)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(pot)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(borrar)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(igual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jButton17)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(pot))))))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -392,7 +390,7 @@ public class GUI extends javax.swing.JFrame {
                 
             case 5:
                 campo.setText(" ");
-                campo.setText(Double.toString(m.sin(num1)));
+                campo.setText(Double.toString(m.sen(num1)));
                 
                 break;
                 
